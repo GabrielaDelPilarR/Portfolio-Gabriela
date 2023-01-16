@@ -23,7 +23,7 @@ const AboutStyled = styled.div`
     }
 
     span{ 
-        color: var(--pink);
+        color: var(--pink);  
         font-weight: 600;
     }
 
