@@ -11,6 +11,7 @@ const HeadStyled = styled.header`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     .logo{
         display:flex;
+        align-items:center;
         gap:0.6rem;
     }
 
