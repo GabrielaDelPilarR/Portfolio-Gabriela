@@ -13,6 +13,8 @@ const AboutStyled = styled.div`
         max-width: 64rem;
         gap:5rem;
         margin-block-start: 6rem;
+        margin-block-end: 3rem;
+        margin-inline:2rem;
     }
 
     .profile{

@@ -15,9 +15,9 @@ const GlobalStylesStyled = createGlobalStyle`
     --purple: #563d7c; 
     --black-2: #171b21; 
     --headline1: 700 2.75rem Poppins; 
-    --button: 500 0.875rem/1.5rem Inter; 
-    --headline2: 600 2.25rem Poppins; 
-    --button: 600 1.25rem/1.5rem Poppins; 
+    --button: 600 1.1rem Poppins; 
+    --headline2: 600 2rem Poppins; 
+    --headline3: 600 1.25rem/1.5rem Poppins; 
     --body-regular: 400 1.2rem Poppins; 
     --body1: 500 1.14rem Poppins; 
     --body2-regular: 400 0.875rem/1.5rem Poppins; 
@@ -49,8 +49,8 @@ button{
     border:none;
     background: var(--pink);
     border-radius: 10px;
-    padding-block: 1.5rem;
-    padding-inline: 4rem;
+    padding-block: 1.3rem;
+    padding-inline: 3rem;
     cursor: pointer;
     font: var(--button);
     color: #FFFFFF;
