@@ -83,7 +83,7 @@ function FeaturedProjects() {
         description: 'Web interface to manage fast food orders, focused on administrator, waiter and cook employees to facilitate their activities within the company.',
     }, {
         title: 'GitList 👩‍💻',
-        href: "https://karlavasquez8.github.io/LIM018-data-lovers/src/",
+        href: "https://gabrieladelpilarr.github.io/Burger-Queen/",
         src: GitList,
         alt: 'GitList',
         description: 'Manage your project repositories like a pro using GitList, the worlds largest and most advanced development platform.GitHub Rest Api was used',
