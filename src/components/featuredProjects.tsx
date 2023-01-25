@@ -10,10 +10,6 @@ const FeaturedProjectsStyled = styled.div`
     padding-block: 4.06rem;
     align-items: center;
 
-    h2{
-        font:var(--headline2);
-    }
-
     h3{
         font:var(--headline3);
     }
@@ -28,7 +24,7 @@ const FeaturedProjectsStyled = styled.div`
         font: var(--body1);
     }
 
-    .fefe{
+    .content-featured{
         max-width: 23.87rem;
         display:flex;
         flex-direction: column;
@@ -58,7 +54,7 @@ const FeaturedProjectsStyled = styled.div`
         width: 100%;
     }
 
-    .title-projects{
+    .title-project{
         display:flex;
         justify-content: space-between;
        
@@ -103,9 +99,9 @@ function FeaturedProjects() {
             </div>
             <div className='container-featured'>
                 {projects.map(({ title, href, src, alt, description})=>(
-                    <div className='fefe'>
+                    <div className='content-featured'>
                             <>
-                        <div className='title-projects'>
+                        <div className='title-project'>
                             <h3>
                                 {title} 
                             </h3>

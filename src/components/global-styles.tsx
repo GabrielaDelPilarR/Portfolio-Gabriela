@@ -20,7 +20,7 @@ const GlobalStylesStyled = createGlobalStyle`
     --headline3: 600 1.25rem/1.5rem Poppins; 
     --body-regular: 400 1.2rem Poppins; 
     --body1: 500 1.14rem Poppins; 
-    --body2-regular: 400 0.875rem/1.5rem Poppins; 
+    --body2-regular: 500 1rem Poppins; 
     --body2-semi-bold: 600 0.875rem/1.5rem Poppins; 
 }
 
@@ -33,6 +33,10 @@ h1{
     font: var(--headline1);
     color: var(--black);
     margin:0;
+}
+
+h2{
+    font:var(--headline2);
 }
 
 p{
