@@ -22,6 +22,28 @@ align-items: center;
     align-items:center;
 }
 
+.button-container{
+    display:flex;
+    justify-content:center;
+    gap:1.3rem;
+    margin: 2.5rem;
+}
+
+.button-categories{
+    font: var(--button);
+    color: var(--bg);
+    border: 1px solid var(--bg);
+    border-radius: 9px;
+    background: var(--white);
+    padding-block: 0.5rem;
+    padding-inline: 2rem;
+}
+
+.button-categories:focus{
+    background: var(--bg);
+    color: var(--white);
+}
+
 .container-allProjects{
     margin:auto;
     display:flex;
@@ -49,7 +71,7 @@ function AllProjects() {
                 <h2>Projects</h2>
                 <span className='subtitle'>Fulfilled projects</span>
             </div>
-            <div>
+            <div className='button-container'>
                 <button className='button-categories' onClick={() => setCategories('all')}>All</button>
                 <button className='button-categories' onClick={() => setCategories('web')}>Web</button>
                 <button className='button-categories' onClick={() => setCategories('responsive')}>Responsive</button>

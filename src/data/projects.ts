@@ -2,6 +2,15 @@ import gitlist from '../images/GitList.jpg';
 import burger from '../images/BurgerQueen.jpg';
 import helptaster from '../images/HelpTaster.jpg'
 import mdlinks from '../images/npm.jpg';
+import memory from '../images/memory.png';
+import mokepon from '../images/mokepon.jpg'
+import spotifu from '../images/spotifu.jpg'
+import cakeshop from '../images/cake.jpg'
+import formulario from '../images/formulario.jpg'
+import grid from '../images/grid.jpg'
+import video from '../images/video.jpg'
+import nemium from '../images/nemium.jpg'
+import card from '../images/card.jpg'
 
 
 interface Project {
@@ -79,7 +88,7 @@ const project : Project[]=[
         categories:'responsive',
           id: 5,
           title: 'Memory Match 🦎',
-          src: 'memory',
+          src: memory,
           github: 'https://github.com/GabrielaDelPilarR/LIM018-memory-match',
           demo: 'https://gabrieladelpilarr.github.io/LIM018-memory-match/src/',
         modal: {
@@ -92,7 +101,7 @@ const project : Project[]=[
         categories:'web',
           id: 6,
           title: 'Card Validation 💸',
-          src: 'card',
+          src: card,
           github: 'https://github.com/GabrielaDelPilarR/Card-Validation',
           demo: 'https://gabrieladelpilarr.github.io/Card-Validation/src/',
           modal: {
@@ -104,7 +113,7 @@ const project : Project[]=[
         categories:'responsive',
           id: 7,
           title: 'Mokepon multiplayer 🦁',
-          src: 'mokepon',
+          src: mokepon,
           github: 'https://github.com/GabrielaDelPilarR/Mokepon-multiplayer',
           demo: 'https://gabrieladelpilarr.github.io/Mokepon-multiplayer/mokepon/',
         modal: {
@@ -116,7 +125,7 @@ const project : Project[]=[
         categories:'responsive',
           id: 8,
           title: 'Spotifu 🎧',
-          src: 'spotifu',
+          src: spotifu,
           github: 'https://github.com/GabrielaDelPilarR/Spotifu',
           demo: 'https://gabrieladelpilarr.github.io/Spotifu/',
         modal: {
@@ -128,7 +137,7 @@ const project : Project[]=[
         categories: 'responsive',
           id: 9,
           title: 'Formulario de pagos 💸',
-          src: 'formulario',
+          src: formulario,
           github: 'https://github.com/GabrielaDelPilarR/Formulario-de-pagos',
           demo: 'https://gabrieladelpilarr.github.io/Formulario-de-pagos/',
         modal: {
@@ -140,7 +149,7 @@ const project : Project[]=[
         categories: 'web',
           id: 10,
           title: 'Cake shop 🎂',
-          src: 'cakeshop',
+          src: cakeshop,
           github: 'https://github.com/GabrielaDelPilarR/CakeShop',
           demo: 'https://gabrieladelpilarr.github.io/CakeShop/',
         modal: {
@@ -152,7 +161,7 @@ const project : Project[]=[
         categories: 'responsive',
           id: 11,
           title: 'Grid Gallery🌐',
-          src: 'grid',
+          src: grid,
           github: 'https://github.com/GabrielaDelPilarR/Grid-Gallery',
           demo: 'https://gabrieladelpilarr.github.io/Grid-Gallery/index.html',
         modal: {
@@ -164,7 +173,7 @@ const project : Project[]=[
         categories: 'web',
           id: 12,
           title: 'Video Player🎧',
-          src: 'video',
+          src: video,
           github: 'https://github.com/GabrielaDelPilarR/Video-player',
           demo: 'https://gabrieladelpilarr.github.io/Video-player/',
         modal: {
@@ -176,7 +185,7 @@ const project : Project[]=[
         categories: 'web',
           id: 13,
           title: 'Nemium project ',
-          src: 'nemium',
+          src: nemium,
           github: 'https://github.com/GabrielaDelPilarR/Curso-esencial-html-css',
           demo: 'https://gabrieladelpilarr.github.io/Curso-esencial-html-css/',
         modal: {

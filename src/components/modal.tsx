@@ -6,10 +6,14 @@ const ModalStyled = styled.div`
 
 `
 
-function Modal({state:boolean=false}) {
+
+function Modal({state,children}) {
     return (
+        <>
+        {state &&  (
         <ModalStyled>
             <div>
+                {children}
             {project.map(({modal})=>(
                 <>
                 <div>
@@ -29,6 +33,9 @@ function Modal({state:boolean=false}) {
             ))}
             </div>
         </ModalStyled>
+        )}
+        
+        </>
     )
 }
 
