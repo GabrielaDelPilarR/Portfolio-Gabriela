@@ -6,6 +6,8 @@ import Modal from './modal'
 import Card from './card';
 
 const AllProjectsStyled = styled.div`
+
+max-heigth:600px;
 padding-inline: 5rem;
 padding-block: 4.06rem;
 align-items: center;
@@ -21,10 +23,11 @@ align-items: center;
 }
 
 .container-allProjects{
-    display:grid;
+    margin:auto;
+    display:flex;
     justify-content:center;
-    grid-template-columns: repeat(3, 1fr);
-    gap:2rem;
+    flex-wrap:wrap;
+    gap:3rem;
 }
 
 `

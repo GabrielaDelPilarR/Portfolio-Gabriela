@@ -9,7 +9,6 @@ const CardStyled = styled.div`
     flex-direction:column;
     width: 23.68rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border:1px solid red;
     border-radius: 1.3rem;
     background: #F4F1F1;
 
@@ -20,6 +19,7 @@ const CardStyled = styled.div`
     .title-Allproject{
         display:flex;
         justify-content: space-between;
+        padding-inline:1.5rem;
         
     }
 
