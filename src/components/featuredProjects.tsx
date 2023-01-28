@@ -60,6 +60,11 @@ const FeaturedProjectsStyled = styled.div`
        
 
     }
+    @media (max-width:750px){
+        .container-featured{
+            gap:2rem;
+        }
+    }
 
 `
 interface Projects {

@@ -13,7 +13,7 @@ import nemium from '../images/nemium.jpg'
 import card from '../images/card.jpg'
 
 
-interface Project {
+export interface Projects {
     categories: string;
     id: number;
     title: string;
@@ -23,17 +23,19 @@ interface Project {
     modal: {
          title: string; 
          description: string; 
-        }
-
+        },
+    technologies:Array<{
+      name: string,
+      src: string,
+    }>
 }
 
-interface Technologies {
-    name: string,
-    src: string,
-    projects: number[];
+interface Technologies{
+  name:string,
+  src: string,
 }
 
-const project : Project[]=[
+const projectsList : Projects[]=[
       {
         categories: 'web',
           id: 1,
@@ -44,7 +46,22 @@ const project : Project[]=[
         modal: {
           title: 'GitList',
           description: `Administre los repositorios de su proyecto como un profesional utilizando GitList, la plataforma de desarrollo más grande y avanzada del mundo. Se utilizó GitHub Rest Api`
-        }
+       }
+      ,
+        technologies:[
+        {
+          name: 'ReactJS',
+          src: 'https://img.icons8.com/color/48/000000/react-native.png'
+        },
+        {
+          name: 'JavaScript',
+          src: 'https://img.icons8.com/color/48/000000/javascript.png',
+        },
+        {
+          name: 'CSS3',
+          src: 'https://img.icons8.com/color/48/000000/css3.png',
+        },
+      ]
       },
       {
         categories: 'responsive',
@@ -58,6 +75,21 @@ const project : Project[]=[
           title: 'Burger Queen',
           description: `Interfaz web para gestionar pedidos de comida rápida, enfocada a empleados administradores, meseros y cocineros para facilitar sus actividades dentro de la empresa.`
         }
+        ,
+          technologies:[
+          {
+            name: 'ReactJS',
+            src: 'https://img.icons8.com/color/48/000000/react-native.png'
+          },
+          {
+            name: 'JavaScript',
+            src: 'https://img.icons8.com/color/48/000000/javascript.png',
+          },
+          {
+            name: 'CSS3',
+            src: 'https://img.icons8.com/color/48/000000/css3.png',
+          },
+        ]
       },
       {
         categories: 'web',
@@ -71,6 +103,21 @@ const project : Project[]=[
           title: 'MD Links',
           description: `Es una libreria de NodeJS que permite analizar los archivos de tipo Markdown, ya sea desde un archivo o directorio, que pueden estar alojados dentro de carpetas .`
         }
+        ,
+          technologies:[
+          {
+            name: 'JavaScript',
+            src: 'https://img.icons8.com/color/48/000000/javascript.png',
+          },
+          {
+            name: 'NodeJS',
+            src: 'https://img.icons8.com/color/48/000000/nodejs.png',
+          },
+          {
+            name: 'Jest',
+            src: 'https://i.imgur.com/iLtGD5c.png',
+          },
+        ]
       },
       {
         categories:'responsive',
@@ -82,7 +129,34 @@ const project : Project[]=[
         modal: {
           title: 'Help Taster',
           description: `En esta red social, los usuarios pueden postear información relacionada a restaurantes y sugerencias sobre sobre los mejores platos que han degustado. Además le permite crear,editar y eliminar sus publicaciones.`
-        }
+        },
+        technologies:[
+          {
+            name: 'JavaScript',
+            src: 'https://img.icons8.com/color/48/000000/javascript.png',
+          },
+          {
+            name: 'HTML5',
+            src: 'https://img.icons8.com/color/48/000000/html-5.png',
+          },
+          {
+            name: 'CSS3',
+            src: 'https://img.icons8.com/color/48/000000/css3.png',
+          },
+          {
+            name: 'Firebase',
+            src: 'https://img.icons8.com/color/48/000000/firebase.png',
+          },
+          {
+            name: 'Jest',
+            src: 'https://i.imgur.com/iLtGD5c.png',
+          },
+          {
+            name: 'Figma',
+            src: 'https://img.icons8.com/office/48/000000/figma.png',
+          }
+
+        ]
       },
       {
         categories:'responsive',
@@ -93,9 +167,30 @@ const project : Project[]=[
           demo: 'https://gabrieladelpilarr.github.io/LIM018-memory-match/src/',
         modal: {
           title: 'Memory Match',
-          description: `About
+          description: `
           Es un juego que ejercita la memoria, en donde el usuario puede destapar 2 cartas por turno y si hacen match aumenta el puntaje en 100 puntos. El usuario gana cuando ha destapado todas las cartas, además de acuerdo a su desempeño puede ganar una medalla de oro, plata o bronce.`
-        }
+        },
+        technologies:[
+          {
+            name: 'JavaScript',
+            src: 'https://img.icons8.com/color/48/000000/javascript.png',
+          },
+          {
+            name: 'HTML5',
+            src: 'https://img.icons8.com/color/48/000000/html-5.png',
+          },
+          {
+            name: 'CSS3',
+            src: 'https://img.icons8.com/color/48/000000/css3.png',
+          },
+          {
+            name: 'Jest',
+            src: 'https://i.imgur.com/iLtGD5c.png',
+          },
+          {
+            name: 'Figma',
+            src: 'https://img.icons8.com/office/48/000000/figma.png',
+          }]
       },
       {
         categories:'web',
@@ -108,6 +203,20 @@ const project : Project[]=[
           title: 'Card Validation',
           description: `Realiza la compra de tu despensa semanal de manera digital , además puedes saber si tu tarjeta es valida o no utilizando el algoritmo de Luhn`
         }
+        ,
+        technologies:[
+          {
+            name: 'JavaScript',
+            src: 'https://img.icons8.com/color/48/000000/javascript.png',
+          },
+          {
+            name: 'HTML5',
+            src: 'https://img.icons8.com/color/48/000000/html-5.png',
+          },
+          {
+            name: 'CSS3',
+            src: 'https://img.icons8.com/color/48/000000/css3.png',
+          }]
       },
       {
         categories:'responsive',
@@ -120,6 +229,20 @@ const project : Project[]=[
           title: 'Mokepon multiplayer',
           description: `Juego de interaccion donde puedes elegir un mokepon y competir en una batalla estupenda`
         }
+        ,
+        technologies:[
+          {
+            name: 'JavaScript',
+            src: 'https://img.icons8.com/color/48/000000/javascript.png',
+          },
+          {
+            name: 'HTML5',
+            src: 'https://img.icons8.com/color/48/000000/html-5.png',
+          },
+          {
+            name: 'CSS3',
+            src: 'https://img.icons8.com/color/48/000000/css3.png',
+          }]
       },
       {
         categories:'responsive',
@@ -132,6 +255,16 @@ const project : Project[]=[
           title: 'Spotifu 🎧',
           description: `Spotifu es un clon exacto de la interfaz web de Spotify.`
         }
+        ,
+        technologies:[
+          {
+            name: 'HTML5',
+            src: 'https://img.icons8.com/color/48/000000/html-5.png',
+          },
+          {
+            name: 'CSS3',
+            src: 'https://img.icons8.com/color/48/000000/css3.png',
+          }]
       },
       {
         categories: 'responsive',
@@ -144,6 +277,16 @@ const project : Project[]=[
           title: 'Formulario de pagos 💸',
           description: `Aprendiendo flexbox, maqueta de formulario`
         }
+        ,
+        technologies:[
+          {
+            name: 'HTML5',
+            src: 'https://img.icons8.com/color/48/000000/html-5.png',
+          },
+          {
+            name: 'CSS3',
+            src: 'https://img.icons8.com/color/48/000000/css3.png',
+          }]
       },
       {
         categories: 'web',
@@ -156,6 +299,16 @@ const project : Project[]=[
           title: 'Cake shop 🎂',
           description: `Enamora tu paladar con los ricos pasteles que tenemos disponibles para ti.`
         }
+        ,
+        technologies:[
+          {
+            name: 'HTML5',
+            src: 'https://img.icons8.com/color/48/000000/html-5.png',
+          },
+          {
+            name: 'CSS3',
+            src: 'https://img.icons8.com/color/48/000000/css3.png',
+          }]
       },
       {
         categories: 'responsive',
@@ -168,6 +321,16 @@ const project : Project[]=[
           title: 'Grid Gallery🌐',
           description: `Practica tus habilidades de Grid CSS con este ejercicio de las capitales del mundo.`
         }
+        ,
+        technologies:[
+          {
+            name: 'HTML5',
+            src: 'https://img.icons8.com/color/48/000000/html-5.png',
+          },
+          {
+            name: 'CSS3',
+            src: 'https://img.icons8.com/color/48/000000/css3.png',
+          }]
       },
       {
         categories: 'web',
@@ -180,6 +343,16 @@ const project : Project[]=[
           title: 'Video Player🎧',
           description: `Reproductor de video , aprendiendo js`
         }
+        ,
+        technologies:[
+          {
+            name: 'HTML5',
+            src: 'https://img.icons8.com/color/48/000000/html-5.png',
+          },
+          {
+            name: 'CSS3',
+            src: 'https://img.icons8.com/color/48/000000/css3.png',
+          }]
       },
       {
         categories: 'web',
@@ -191,7 +364,16 @@ const project : Project[]=[
         modal: {
           title: 'Nemium project',
           description: `Curso basico de html y css, aprendiendo a programar`
-        }
+        },
+        technologies:[
+          {
+            name: 'HTML5',
+            src: 'https://img.icons8.com/color/48/000000/html-5.png',
+          },
+          {
+            name: 'CSS3',
+            src: 'https://img.icons8.com/color/48/000000/css3.png',
+          }]
       },   
 ]
 
@@ -199,47 +381,38 @@ const technologies : Technologies[]=[
     {
         name: 'ReactJS',
         src: 'https://img.icons8.com/color/48/000000/react-native.png',
-        projects: [1,2],
       },
       {
         name: 'JavaScript',
         src: 'https://img.icons8.com/color/48/000000/javascript.png',
-        projects: [1,2,3,4,5,6,7,12],
       },
       {
         name: 'Typescript',
         src: 'https://img.icons8.com/color/48/000000/typescript.png',
-        projects: [],
       },
       {
         name: 'HTML5',
         src: 'https://img.icons8.com/color/48/000000/html-5.png',
-        projects: [1,2,3,4,5,6,7,8,9,10,11,12],
       },
       {
         name: 'CSS3',
         src: 'https://img.icons8.com/color/48/000000/css3.png',
-        projects: [1,2,3,4,5,6,7,8,9,10,11,12],
       },
       {
         name: 'Firebase',
         src: 'https://img.icons8.com/color/48/000000/firebase.png',
-        projects: [5],
       },
       {
         name: 'NodeJS',
         src: 'https://img.icons8.com/color/48/000000/nodejs.png',
-        projects: [4],
       },
       {
         name: 'Jest',
         src: 'https://i.imgur.com/iLtGD5c.png',
-        projects: [4,5,6],
       },
       {
         name: 'Figma',
         src: 'https://img.icons8.com/office/48/000000/figma.png',
-        projects: [2,3,5,6],
       }
 ]
-export{project, technologies}
+export{projectsList, technologies}

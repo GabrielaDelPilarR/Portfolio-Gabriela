@@ -1,13 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 import styled from 'styled-components'
-import { project, technologies } from '../data/projects'
+import { projectsList, technologies } from '../data/projects'
 import Modal from './modal'
 import Card from './card';
 
 const AllProjectsStyled = styled.div`
 
-max-heigth:600px;
 padding-inline: 5rem;
 padding-block: 4.06rem;
 align-items: center;
@@ -50,6 +49,20 @@ align-items: center;
     justify-content:center;
     flex-wrap:wrap;
     gap:3rem;
+    max-height: 50rem;
+    overflow-y: scroll;
+}
+
+.container-allProjects::-webkit-scrollbar{
+    width: 6px;
+    background: #F1F7B5;
+    border-radius: 4px;
+}
+
+.container-allProjects::-webkit-scrollbar-thumb{
+    width: 6px;
+    background:#FD8A8A;
+    border-radius: 4px;
 }
 
 `
@@ -58,12 +71,14 @@ align-items: center;
 
 function AllProjects() {
     const [categories, setCategories] = useState('all');
-    const categorizeItems = project.map(project => (
+    const categorizeItems = projectsList.map((project) => (
         <Card
-          project={project} 
-          key={project.id}/>
+          project={project}
+          key={project.id}
+        />
         ))
-    const filteredCategories = project.filter((project)=> project.categories === categories);
+    const filteredCategories = projectsList.filter((project)=> project.categories === categories);
+    console.log(filteredCategories)
 
     return (
         <AllProjectsStyled>
@@ -77,9 +92,13 @@ function AllProjects() {
                 <button className='button-categories' onClick={() => setCategories('responsive')}>Responsive</button>
             </div>
             <div className='container-allProjects'>
-                { categories=== 'all'? categorizeItems : null}
+                { categories=== 'all'? categorizeItems : filteredCategories.map((project)=>(
+                <Card
+                project={project}
+                key={project.id}
+              />
+                ))}
             </div>
-            
         </AllProjectsStyled>
     )
 }

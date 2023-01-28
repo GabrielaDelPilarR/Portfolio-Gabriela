@@ -1,15 +1,14 @@
 import styled from 'styled-components'
-import { project,technologies } from '../data/projects'
-import { UilCheckCircle } from '@iconscout/react-unicons'
+import { Projects} from '../data/projects'
 import { useState } from 'react'
 import { UilExclamationCircle } from '@iconscout/react-unicons'
 import { UilArrow } from '@iconscout/react-unicons'
 import { UilMonitor } from '@iconscout/react-unicons'
+
 import Modal from './modal'
 
 const CardStyled = styled.div`
-    display:flex;
-    flex-direction:column;
+    
     width: 23.68rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 1.3rem;
@@ -22,9 +21,9 @@ const CardStyled = styled.div`
 
     .container-info{
         display:flex;
-        justify-content:space-around;
         flex-direction:column;
         gap:1rem;
+        margin-block-end:1rem;
     }
 
 
@@ -41,7 +40,6 @@ const CardStyled = styled.div`
         justify-content: space-between;
         padding-inline:1.5rem;
         padding-block-start:1rem;
-        
     }
 
     .content-links{
@@ -57,7 +55,6 @@ const CardStyled = styled.div`
         text-decoration:none;
         color: var(--pink);
         font: var(--body2-regular);
-        
     }
 
     .icon-projects{
@@ -72,23 +69,14 @@ const CardStyled = styled.div`
 
 `
 interface Props {
-    project:{
-        categories: string;
-        id: number;
-        title: string;
-        src: string;
-        github: string;
-        demo: string;
-        modal: {
-             title: string; 
-             description: string; 
-            }
-    }
+    project: Projects
 }
 
 function Card({project}:Props) {
     const [modal, setModal] = useState(false)
     return (
+        <>
+        
         <CardStyled key={project.id}>
             <div className='container-img'>
                 <img className='img-Allproject' src={project.src} alt={project.title}></img>
@@ -96,7 +84,10 @@ function Card({project}:Props) {
             <div className='container-info'>
                 <div className='title-Allproject'>
                     <h3>{project.title}</h3>
-                    <UilExclamationCircle  className='icon-projects' onclick={()=> setModal(true)}/>
+                    <UilExclamationCircle  className='icon-projects' onClick={()=> {
+                        console.log('hola')
+                        setModal(true)
+                        }}/>
                 </div>
                 <div className='content-links'>
                     <a href={project.github} target='_blank' rel='noreferrer'>Codigo
@@ -107,24 +98,13 @@ function Card({project}:Props) {
                     </a>
                 </div>
             </div>
-            <Modal state= {modal}>
-                    <>
-                    <div>
-                        <h3>
-                        {project.modal.title}
-                        </h3>
-                        <UilCheckCircle/> <p>{project.modal.description}</p>
-                    </div>
-
-                    </>
-                {technologies.map(({name,src,projects})=>(
-                    <>
-                        <UilCheckCircle/><h4>{name}</h4>
-                        <img src={src} alt={name} width='32px'></img>
-                    </>
-                ))}
-            </Modal>
         </CardStyled>
+            <Modal 
+            state= {modal}
+            setModal={setModal}
+            project={project}
+            />
+        </>
     )
 }
 

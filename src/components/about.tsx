@@ -17,6 +17,22 @@ const AboutStyled = styled.div`
         margin-inline:2rem;
     }
 
+    .presentation{
+        font-size: 1.6rem;
+        display:block;
+        white-space:nowrap;
+        width: 19ch;
+        animation: typing 3s steps(19) alternate infinite;
+        overflow:hidden;
+
+    }
+    @keyframes typing{
+        from{width:0}
+    }
+    @keyframes blink{
+        from {width:0}
+    }
+
     .profile{
         width: 100%;
         min-width: 350px;
@@ -44,6 +60,13 @@ const AboutStyled = styled.div`
         margin-block: 1.7rem;
     }
 
+    @media (max-width:750px){
+        .container-about{
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+        }
+    }
+
 `
 
 function About() {
@@ -51,7 +74,8 @@ function About() {
         <AboutStyled>
             <div className='container-about'>
             <div className='description'>
-                <h1>HI! I Am Gabriela Rojas </h1>
+                <h1 >HI! I Am Gabriela Rojas </h1>
+                <span className='presentation'>Frontend Developer</span>
                 <p>I am passionate about understanding user needs and translating them into  
                 <span> digital solutions</span>. I have always been excited to join <span>innovative teams</span> that are constantly looking for the latest technologies.</p>
                 <div>

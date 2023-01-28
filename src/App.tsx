@@ -3,6 +3,8 @@ import Head from './components/head';
 import About from './components/about';
 import FeaturedProjects from './components/featuredProjects';
 import AllProjects from './components/allProjects';
+import Technologies from './components/technologies';
+import Contact from './components/contact';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         <About></About>
         <FeaturedProjects></FeaturedProjects>
         <AllProjects></AllProjects>
+        <Technologies></Technologies>
+        <Contact></Contact>
 
       
     </div>
