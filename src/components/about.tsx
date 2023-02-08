@@ -5,6 +5,7 @@ import { UilTwitter } from '@iconscout/react-unicons'
 import { UilGithub } from '@iconscout/react-unicons'
 import TextButton from './textButton'
 
+
 const AboutStyled = styled.div`
     display: flex;
     justify-content: space-around;
@@ -81,7 +82,7 @@ function About() {
                 <p>I am passionate about understanding user needs and translating them into  
                 <span> digital solutions</span>. I have always been excited to join <span>innovative teams</span> that are constantly looking for the latest technologies.</p>
                 <div>
-                <TextButton download ='../images/GabrielaRojas_cv1.pdf'>Curriculum</TextButton>
+                <TextButton download ='../../public/GabrielaRojas_cv1.pdf' href=''>Curriculum</TextButton>
                 <div className='info-contact'>
                     <p>Check out my :</p>
 

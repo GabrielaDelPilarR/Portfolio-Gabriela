@@ -10,23 +10,23 @@ const TextButtonStyled = styled.div`
     cursor: pointer;
     font: var(--button);
     color: #FFFFFF;
+    margin-block: 1rem;
+    text-decoration: none;
 
 }
 `
-type Type = 'primary' | 'secondary' | "thrid"
 
 interface TextButtonProps {
     children: React.ReactNode;
-    type?: Type;
     download?: string;
     href?: string;
 }
 
 export const TextButton = (props: TextButtonProps) => {
-    const { type = 'primary', children, href, download } = props
+    const {children, href, download } = props
     return (
         <TextButtonStyled>
-            <a href={href} download={download} className='button'>
+            <a download={download} href={href}  className='button'>
                 {children}
             </a>
         

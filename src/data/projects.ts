@@ -383,6 +383,10 @@ const technologies : Technologies[]=[
         src: 'https://img.icons8.com/color/48/000000/react-native.png',
       },
       {
+        name: 'Angular',
+        src: 'https://img.icons8.com/fluency/256/angularjs.png',
+      },
+      {
         name: 'JavaScript',
         src: 'https://img.icons8.com/color/48/000000/javascript.png',
       },
