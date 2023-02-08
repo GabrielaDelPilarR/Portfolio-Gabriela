@@ -9,6 +9,7 @@ import Modal from './modal'
 
 const CardStyled = styled.div`
     
+
     width: 23.68rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 1.3rem;

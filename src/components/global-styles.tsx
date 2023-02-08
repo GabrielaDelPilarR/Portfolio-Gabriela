@@ -1,10 +1,11 @@
 import {createGlobalStyle} from 'styled-components'
 
+
 const GlobalStylesStyled = createGlobalStyle`
 
 :root{
     --primary: #57a6ff; 
-    --white: #fffffe; 
+    --white: #FFFF;
     --black: #242323;
     --grey: #8b949e; 
     --bg: #0d1117; 
@@ -49,17 +50,7 @@ span{
     font-weight: 600;
 }
 
-button{
-    border:none;
-    background: var(--pink);
-    border-radius: 10px;
-    padding-block: 1.3rem;
-    padding-inline: 3rem;
-    cursor: pointer;
-    font: var(--button);
-    color: #FFFFFF;
 
-}
 `
 
 

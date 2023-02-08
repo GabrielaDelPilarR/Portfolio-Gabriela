@@ -3,6 +3,7 @@ import avatar from '../images/person (2).png'
 import { UilLinkedin } from '@iconscout/react-unicons'
 import { UilTwitter } from '@iconscout/react-unicons'
 import { UilGithub } from '@iconscout/react-unicons'
+import TextButton from './textButton'
 
 const AboutStyled = styled.div`
     display: flex;
@@ -12,7 +13,7 @@ const AboutStyled = styled.div`
         align-items:center;
         max-width: 64rem;
         gap:5rem;
-        margin-block-start: 6rem;
+        margin-block-start: 9rem;
         margin-block-end: 3rem;
         margin-inline:2rem;
     }
@@ -64,6 +65,7 @@ const AboutStyled = styled.div`
         .container-about{
             flex-wrap: wrap-reverse;
             justify-content: center;
+            margin-inline: 0;
         }
     }
 
@@ -71,7 +73,7 @@ const AboutStyled = styled.div`
 
 function About() {
     return (
-        <AboutStyled>
+        <AboutStyled id='about'>
             <div className='container-about'>
             <div className='description'>
                 <h1 >HI! I Am Gabriela Rojas </h1>
@@ -79,12 +81,19 @@ function About() {
                 <p>I am passionate about understanding user needs and translating them into  
                 <span> digital solutions</span>. I have always been excited to join <span>innovative teams</span> that are constantly looking for the latest technologies.</p>
                 <div>
-                <button>Curriculum</button>
+                <TextButton download ='../images/GabrielaRojas_cv1.pdf'>Curriculum</TextButton>
                 <div className='info-contact'>
                     <p>Check out my :</p>
+
+                    <a href='https://www.linkedin.com/in/gabrielarojasroque/' target='_blank' rel="noreferrer">
                     <UilLinkedin className='icons' width='30' height='30'/>
+                    </a>
+                    <a href='https://twitter.com/Gabriel78383636' target='_blank' rel='noreferrer'>
                     <UilTwitter className='icons' width='30' height='30'/>
+                    </a>
+                    <a href='https://github.com/GabrielaDelPilarR' target='_blank' rel='noreferrer' >
                     <UilGithub className='icons' width='30' height='30'/>
+                    </a>
                 </div>
                 </div>
                 

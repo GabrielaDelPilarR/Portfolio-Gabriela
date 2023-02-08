@@ -51,7 +51,7 @@ align-items: center;
 
 function Contact() {
     return (
-        <ContactStyled>
+        <ContactStyled id='contact'>
             <div className='title-section'>
                 <h2>Contact</h2>
                 <span className='subtitle'>check out my contact</span>

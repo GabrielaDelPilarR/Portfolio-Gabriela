@@ -40,7 +40,7 @@ padding-block: 4.06rem;
 
 function Technologies() {
     return (
-        <TechnologiesStyled>
+        <TechnologiesStyled id='technologies'>
             <section className='title-section'>
                 <h2>Technologies</h2>
                 <span className='subtitle'>My technical level</span>

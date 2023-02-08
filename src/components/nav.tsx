@@ -15,11 +15,16 @@ const NavStyled = styled.nav`
         color: var(--pink);
     }
 
+    @media (max-width:750px){
+        display:none;
+    }
+
 `
+
 
 function Nav() {
     return (
-        <NavStyled>
+        <NavStyled >
             <a className='a-nav' href='#about'>About me</a>
             <a className='a-nav' href='#projects'>Projects</a>
             <a className='a-nav' href='#technologies'>Technologies</a>

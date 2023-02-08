@@ -65,6 +65,20 @@ align-items: center;
     border-radius: 4px;
 }
 
+@media (max-width:750px){
+    padding-inline: 1rem;
+
+    .container-featured{
+        gap:2rem;
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .button-categories{
+        font-size: 0.7rem;
+    }
+}
+
 `
 
 
@@ -81,7 +95,7 @@ function AllProjects() {
     console.log(filteredCategories)
 
     return (
-        <AllProjectsStyled>
+        <AllProjectsStyled id='projects'>
             <div className='title-section'>
                 <h2>Projects</h2>
                 <span className='subtitle'>Fulfilled projects</span>
