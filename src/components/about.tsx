@@ -82,7 +82,7 @@ function About() {
                 <p>I am passionate about understanding user needs and translating them into  
                 <span> digital solutions</span>. I have always been excited to join <span>innovative teams</span> that are constantly looking for the latest technologies.</p>
                 <div>
-                <TextButton download ='../../public/GabrielaRojas_cv1.pdf' href=''>Curriculum</TextButton>
+                <TextButton download ='../GabrielaRojas_cv1.pdf' href='https://drive.google.com/file/d/1jjmefpde0ACrCcvUaAkUbOR8cBGeEZZo/view?usp=sharing'>Curriculum</TextButton>
                 <div className='info-contact'>
                     <p>Check out my :</p>
 

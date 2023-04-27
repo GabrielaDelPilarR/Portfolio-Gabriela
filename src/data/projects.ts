@@ -11,6 +11,8 @@ import grid from '../images/grid.jpg'
 import video from '../images/video.jpg'
 import nemium from '../images/nemium.jpg'
 import card from '../images/card.jpg'
+import shopping from '../images/shopping.jpg'
+import pokedex from '../images/pokedex.jpg'
 
 
 export interface Projects {
@@ -38,7 +40,61 @@ interface Technologies{
 const projectsList : Projects[]=[
       {
         categories: 'web',
+          id: 0,
+          title: 'Shopping List 🥗',
+          src: shopping,
+          github: 'https://github.com/GabrielaDelPilarR/Shopping-List-Angular',
+          demo: 'https://shopping-list-gabriela.netlify.app/',
+        modal: {
+          title: 'Shopping List 🥗',
+          description: `Anota tu lista de compras , editalas y eliminalas . Tambien podras saber el precio total que debes pagar por tu lista de compras`
+      }
+      ,
+        technologies:[
+        {
+          name: 'Angular',
+          src: 'https://img.icons8.com/fluency/256/angularjs.png'
+        },
+        {
+          name: 'Typescript',
+          src: 'https://img.icons8.com/color/48/000000/typescript.png',
+        },
+        {
+          name: 'CSS3',
+          src: 'https://img.icons8.com/color/48/000000/css3.png',
+        },
+      ]
+      },
+      {
+        categories: 'web',
           id: 1,
+          title: 'Pokedex 🌳🐲',
+          src: pokedex,
+          github: 'https://github.com/GabrielaDelPilarR/Pokedex-React',
+          demo: 'https://pokedex-react-ecru.vercel.app/',
+        modal: {
+          title: 'Pokedex 🌳🐲',
+          description: `Busca tu pokemon favorito y descubre sus habilidades. Se utilizó Pokemon Rest Api`
+       }
+      ,
+        technologies:[
+        {
+          name: 'ReactJS',
+          src: 'https://img.icons8.com/color/48/000000/react-native.png'
+        },
+        {
+          name: 'JavaScript',
+          src: 'https://img.icons8.com/color/48/000000/javascript.png',
+        },
+        {
+          name: 'CSS3',
+          src: 'https://img.icons8.com/color/48/000000/css3.png',
+        },
+      ]
+      },
+      {
+        categories: 'web',
+          id: 2,
           title: 'GitList 👩‍💻',
           src: gitlist,
           github: 'https://github.com/GabrielaDelPilarR/GitList-React',
@@ -65,7 +121,7 @@ const projectsList : Projects[]=[
       },
       {
         categories: 'responsive',
-          id: 2,
+          id: 3,
           title: 'Burger Queen 🍔',
           src: burger,
           github: 'https://github.com/GabrielaDelPilarR/Burger-Queen',
@@ -93,7 +149,7 @@ const projectsList : Projects[]=[
       },
       {
         categories: 'web',
-          id: 3,
+          id: 4,
           title: 'Md-links 💻',
           src: mdlinks,
           github: 'https://github.com/GabrielaDelPilarR/Md-links-',
@@ -121,7 +177,7 @@ const projectsList : Projects[]=[
       },
       {
         categories:'responsive',
-          id: 4,
+          id: 5,
           title: 'Help Taster Social Network 🍴',
           src: helptaster,
           github: 'https://github.com/GabrielaDelPilarR/Help-Taster---social-network',
@@ -160,7 +216,7 @@ const projectsList : Projects[]=[
       },
       {
         categories:'responsive',
-          id: 5,
+          id: 6,
           title: 'Memory Match 🦎',
           src: memory,
           github: 'https://github.com/GabrielaDelPilarR/LIM018-memory-match',
@@ -194,7 +250,7 @@ const projectsList : Projects[]=[
       },
       {
         categories:'web',
-          id: 6,
+          id: 7,
           title: 'Card Validation 💸',
           src: card,
           github: 'https://github.com/GabrielaDelPilarR/Card-Validation',
@@ -220,7 +276,7 @@ const projectsList : Projects[]=[
       },
       {
         categories:'responsive',
-          id: 7,
+          id: 8,
           title: 'Mokepon multiplayer 🦁',
           src: mokepon,
           github: 'https://github.com/GabrielaDelPilarR/Mokepon-multiplayer',
@@ -246,7 +302,7 @@ const projectsList : Projects[]=[
       },
       {
         categories:'responsive',
-          id: 8,
+          id: 9,
           title: 'Spotifu 🎧',
           src: spotifu,
           github: 'https://github.com/GabrielaDelPilarR/Spotifu',
@@ -268,7 +324,7 @@ const projectsList : Projects[]=[
       },
       {
         categories: 'responsive',
-          id: 9,
+          id: 10,
           title: 'Formulario de pagos 💸',
           src: formulario,
           github: 'https://github.com/GabrielaDelPilarR/Formulario-de-pagos',
@@ -290,7 +346,7 @@ const projectsList : Projects[]=[
       },
       {
         categories: 'web',
-          id: 10,
+          id: 11,
           title: 'Cake shop 🎂',
           src: cakeshop,
           github: 'https://github.com/GabrielaDelPilarR/CakeShop',
@@ -312,7 +368,7 @@ const projectsList : Projects[]=[
       },
       {
         categories: 'responsive',
-          id: 11,
+          id: 12,
           title: 'Grid Gallery🌐',
           src: grid,
           github: 'https://github.com/GabrielaDelPilarR/Grid-Gallery',
@@ -334,7 +390,7 @@ const projectsList : Projects[]=[
       },
       {
         categories: 'web',
-          id: 12,
+          id: 13,
           title: 'Video Player🎧',
           src: video,
           github: 'https://github.com/GabrielaDelPilarR/Video-player',
@@ -356,7 +412,7 @@ const projectsList : Projects[]=[
       },
       {
         categories: 'web',
-          id: 13,
+          id: 14,
           title: 'Nemium project ',
           src: nemium,
           github: 'https://github.com/GabrielaDelPilarR/Curso-esencial-html-css',
