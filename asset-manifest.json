@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Gabriela/static/css/main.e6c13ad2.css",
-    "main.js": "/Portfolio-Gabriela/static/js/main.2c8e2b2f.js",
+    "main.js": "/Portfolio-Gabriela/static/js/main.9d9febad.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio-Gabriela/static/js/787.1ed0c42c.chunk.js",
     "static/media/developer.gif": "/Portfolio-Gabriela/static/media/developer.b82d0eb115cc9cf23d3c.gif",
     "static/media/person (2).png": "/Portfolio-Gabriela/static/media/person (2).419ce156d7dbafa0187c.png",
@@ -10,9 +10,11 @@
     "static/media/HelpTaster.jpg": "/Portfolio-Gabriela/static/media/HelpTaster.b8f25d5bbdfb8599d7e5.jpg",
     "static/media/memory.png": "/Portfolio-Gabriela/static/media/memory.ce031e829a118dab1351.png",
     "static/media/cake.jpg": "/Portfolio-Gabriela/static/media/cake.af208cda165416664e86.jpg",
+    "static/media/pokedex.jpg": "/Portfolio-Gabriela/static/media/pokedex.ab8431b2ba7a7a09ad57.jpg",
     "static/media/card.jpg": "/Portfolio-Gabriela/static/media/card.3d318a65434a7a7d77fe.jpg",
     "static/media/npm.jpg": "/Portfolio-Gabriela/static/media/npm.e2c07c131bc91a97120a.jpg",
     "static/media/nemium.jpg": "/Portfolio-Gabriela/static/media/nemium.e2aeae4626c82773ad3a.jpg",
+    "static/media/shopping.jpg": "/Portfolio-Gabriela/static/media/shopping.f8e82e627619f5606ad2.jpg",
     "static/media/GitList.jpg": "/Portfolio-Gabriela/static/media/GitList.a0c7dcd4ca09f3a73b45.jpg",
     "static/media/BurgerQueen.jpg": "/Portfolio-Gabriela/static/media/BurgerQueen.a62850dfd77e14a1b7d5.jpg",
     "static/media/formulario.jpg": "/Portfolio-Gabriela/static/media/formulario.d9ed77e08175a5d74278.jpg",
@@ -20,11 +22,11 @@
     "static/media/video.jpg": "/Portfolio-Gabriela/static/media/video.94b75b899a8aa72e1fd5.jpg",
     "index.html": "/Portfolio-Gabriela/index.html",
     "main.e6c13ad2.css.map": "/Portfolio-Gabriela/static/css/main.e6c13ad2.css.map",
-    "main.2c8e2b2f.js.map": "/Portfolio-Gabriela/static/js/main.2c8e2b2f.js.map",
+    "main.9d9febad.js.map": "/Portfolio-Gabriela/static/js/main.9d9febad.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio-Gabriela/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.2c8e2b2f.js"
+    "static/js/main.9d9febad.js"
   ]
 }
